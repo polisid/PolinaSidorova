@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Полина Сидорова — Психолог</title>
+  <style>
+    body { font-family: Georgia, serif; background: #f9f8f5; color: #222; margin: 0; padding: 0; }
+    header { background: #e6dccf; text-align: center; padding: 50px 20px; }
+    header h1 { margin: 0; color: #5a4033; font-size: 2.5em; }
+    header p { color: #5a4033; font-size: 1.2em; }
+    section { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    h2 { color: #5a4033; border-bottom: 2px solid #e6dccf; padding-bottom: 5px; }
+    ul { padding-left: 20px; }
+    img { max-width: 100%; margin-bottom: 10px; border: 1px solid #ddd; }
+    footer { background: #e6dccf; text-align: center; padding: 20px; font-size: 0.9em; color: #5a4033; }
+    .collapsible { cursor: pointer; text-decoration: underline; color: #5a4033; display: inline-block; margin-top: 10px; }
+    .content { display: none; text-align: left; padding: 10px 0; }
+  </style>
+  <script>
+    function toggleContent(id) {
+      var el = document.getElementById(id);
+      el.style.display = el.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1>Полина Сидорова</h1>
+    <p>Психолог, который умеет быть рядом</p>
+  </header>
+
+  <section>
+    <h2>Обо мне</h2>
+    <p>Меня зовут Полина Сидорова. Я психолог, который умеет быть рядом — без давления, пафоса и шаблонов...</p>
+  </section>
+
+  <section>
+    <h2>С чем я работаю</h2>
+    <ul>
+      <li>С тревогой, стрессом, напряжением</li>
+      <li>С потерей сил, выгоранием</li>
+      <li>С установками, мешающими развиваться</li>
+      <li>С трудностями в отношениях и выстраиванием границ</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Как проходит консультация</h2>
+    <p>Первая встреча — это пространство знакомства. Мы уточняем ваш запрос, я рассказываю о формате и этике работы. Если мы подходим друг другу — договариваемся о дальнейших встречах.</p>
+  </section>
+
+  <section>
+    <h2>Как я принимаю</h2>
+    <p><strong>Очно</strong> — в Барнауле, в уютном кабинете в центре города.</p>
+    <p><strong>Онлайн</strong> — в Telegram, Google Meet или Яндекс Телемост.</p>
+    <p><strong>Часы работы:</strong> ежедневно с 07:00 до 15:00 по МСК.</p>
+  </section>
+
+  <section>
+    <h2>Образование и квалификации</h2>
+    <p>Постоянное обучение и повышение квалификации.</p>
+    <p>Ниже представлены мои дипломы и сертификаты:</p>
+    <img src="diplom1.jpg" alt="Диплом 1">
+    <img src="diplom2.jpg" alt="Диплом 2">
+  </section>
+
+  <section>
+    <h2>Контакты для записи</h2>
+    <p>Telegram: <a href="https://t.me/Poli_O_Si" target="_blank">@Poli_O_Si</a></p>
+    <p>ВКонтакте: <a href="https://vk.com/poli_o_si" target="_blank">vk.com/poli_o_si</a></p>
+    <p>Канал: <a href="https://t.me/delo_v_tele" target="_blank">t.me/delo_v_tele</a></p>
+  </section>
+
+  <footer>
+    <p>Полина Сидорова — Психолог | Барнаул и Онлайн</p>
+    <span class="collapsible" onclick="toggleContent('offer')">Публичная оферта</span> |
+    <span class="collapsible" onclick="toggleContent('privacy')">Политика конфиденциальности</span>
+    <div id="offer" class="content">
+      <p><strong>ПУБЛИЧНАЯ ОФЕРТА</strong><br>Настоящая оферта является официальным предложением заключить договор... [Текст оферты здесь]</p>
+    </div>
+    <div id="privacy" class="content">
+      <p><strong>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</strong><br>Настоящая Политика регулирует порядок обработки персональных данных... [Текст политики здесь]</p>
+    </div>
+  </footer>
+
+</body>
+</html>
